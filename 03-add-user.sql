@@ -1,0 +1,9 @@
+CREATE LOGIN userone WITH PASSWORD = '340$Uuxwp7Mcxo7Khy'
+GO
+CREATE USER userone FOR LOGIN userone;
+GO
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[dbo].[Table1] TO [userone]
+GO
+GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[dbo].[Table2] TO [userone]
+GO
